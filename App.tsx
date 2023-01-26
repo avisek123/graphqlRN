@@ -9,7 +9,7 @@ import {
 import {GET_ALL} from './graphql/queries';
 import Router from './Router';
 const client = new ApolloClient({
-  uri: 'https://jsonplaceholder.typicode.com/users',
+  uri: 'https://graphqlzero.almansi.me/api',
   cache: new InMemoryCache(),
 });
 const App = () => {
