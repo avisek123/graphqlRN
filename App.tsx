@@ -6,7 +6,7 @@ import {
   InMemoryCache,
   useQuery,
 } from '@apollo/client';
-import {GET_ALL} from './graphql/queries';
+
 import Router from './Router';
 const client = new ApolloClient({
   uri: 'https://graphqlzero.almansi.me/api',
