@@ -6,6 +6,9 @@ import {useQuery} from '@apollo/client';
 const SinglePost = () => {
   const {data, loading, error} = useQuery(SINGLE_POST, {
     variables: {id: 1},
+    onCompleted(data) {
+      console.log(data);
+    },
   });
   console.log('data', data);
   console.log('error', error);
