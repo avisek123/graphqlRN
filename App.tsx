@@ -9,6 +9,7 @@ import {
 
 import Router from './Router';
 import SinglePost from './SinglePost';
+import CreatePost from './CreatePost';
 const client = new ApolloClient({
   uri: 'https://graphqlzero.almansi.me/api',
   cache: new InMemoryCache(),
@@ -17,7 +18,8 @@ const App = () => {
   return (
     <ApolloProvider client={client}>
       {/* <Router /> */}
-      <SinglePost />
+      {/* <SinglePost /> */}
+      <CreatePost />
     </ApolloProvider>
   );
 };
